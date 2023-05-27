@@ -88,7 +88,7 @@ fi
 function Error {
 echo -e "${rojo}
 ┌═════════════════════┐
-█ ${blanco}¡OPCIÓN INCORRECTA! ${rojo}█
+█ ${blanco}¡SALAH PILIHAN! ${rojo}█
 └═════════════════════┘
 "${blanco}
 sleep 0.5
@@ -99,13 +99,7 @@ sleep 0.5
 function SETSMS {
 	sleep 0.5
 	clear
-echo -e "${verde}
-███████╗███████╗████████╗███████╗███╗   ███╗███████╗
-██╔════╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║██╔════╝
-███████╗█████╗     ██║   ███████╗██╔████╔██║███████╗
-╚════██║██╔══╝     ██║   ╚════██║██║╚██╔╝██║╚════██║
-███████║███████╗   ██║   ███████║██║ ╚═╝ ██║███████║
-╚══════╝╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚══════╝"${blanco}
+figlet AREZIZI | lolcat
 }
 #
 # Menu Principal
@@ -114,22 +108,22 @@ function Choose {
 SETSMS
 echo -e -n "${verde}
 ┌═══════════════════════┐
-█ ${blanco}SELECCIONE UNA OPCIÓN ${verde}█
+█ ${blanco}PILIH PILIHAN ${verde}█
 └═══════════════════════┘
 ┃    ┌═══════════════════════════════════════════┐
-└═>>>█ [${blanco}01${verde}] ┃ ${blanco}SPAM DE SMS A 1 NÚMERO TELEFÓNICO  ${verde}█
+└═>>>█ [${blanco}01${verde}] ┃ ${blanco}SMS SPAM KE 1 NOMBOR TELEFON  ${verde}█
 ┃    └═══════════════════════════════════════════┘
 ┃    ┌═══════════════════════════════════════════┐
-└═>>>█ [${blanco}02${verde}] ┃ ${blanco}GUARDAR 1 NÚMERO EN LA LISTA NEGRA ${verde}█
+└═>>>█ [${blanco}02${verde}] ┃ ${blanco}SIMPAN 1 NOMBOR DALAM SENARAI HITAM ${verde}█
 ┃    └═══════════════════════════════════════════┘
 ┃    ┌═══════════════════════════════════════════┐
-└═>>>█ [${blanco}03${verde}] ┃ ${blanco}SPAMEAR NÚMEROS DE LA LISTA NEGRA  ${verde}█
+└═>>>█ [${blanco}03${verde}] ┃ ${blanco}NOMBOR SPAM DARIPADA SENARAI HITAM  ${verde}█
 ┃    └═══════════════════════════════════════════┘
 ┃    ┌═══════════════════════════════════════════┐
-└═>>>█ [${blanco}04${verde}] ┃ ${blanco}VER LOS NÚMEROS DE LA LISTA NEGRA  ${verde}█
+└═>>>█ [${blanco}04${verde}] ┃ ${blanco}LIHAT NOMBOR DI SENARAI HITAM  ${verde}█
 ┃    └═══════════════════════════════════════════┘
 ┃    ┌══════════════┐
-└═>>>█ [${blanco}00${verde}] ┃ ${rojo}SALIR ${verde}█
+└═>>>█ [${blanco}00${verde}] ┃ ${rojo}KELUAR ${verde}█
 ┃    └══════════════┘
 ┃
 └═>>> "${blanco}
